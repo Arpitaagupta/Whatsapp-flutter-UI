@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_flutter_ui/colors.dart';
+import '../widgets/contacts_list.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
@@ -48,6 +49,18 @@ class MobileScreenLayout extends StatelessWidget {
               unselectedLabelColor: Colors.grey,
               labelStyle: TextStyle(fontWeight: FontWeight.bold),
               tabs: [
+                /* Tab(
+                  icon: Icon(Icons.people),
+                  
+                ), */
+                /* Row(
+                  mainAxisAlignment: MainAxisAlignment.,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.people),
+                    SizedBox(width: 2),
+                  ],
+                ), */
                 Tab(
                   text: 'Chats',
                 ),
@@ -59,7 +72,7 @@ class MobileScreenLayout extends StatelessWidget {
                 ),
               ]),
         ),
-        body: const Text('Mobile!'),
+        body: const ContactsList(),
       ),
     );
   }

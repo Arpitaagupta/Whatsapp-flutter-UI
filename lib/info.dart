@@ -1,5 +1,12 @@
 const info = [
   {
+    'name': 'Aanya Goyal',
+    'message': 'Hey, Meeting at 8 pm today!',
+    'time': '3:53 pm',
+    'profilePic':
+        'https://hindutrend.com/wp-content/uploads/2021/03/cute-girl-images-for-dp.jpg',
+  },
+  {
     'name': 'Rivaan Ranawat',
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
