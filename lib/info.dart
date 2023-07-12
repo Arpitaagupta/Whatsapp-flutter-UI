@@ -1,11 +1,11 @@
 const info = [
-  {
+/*   {
     'name': 'Aanya Goyal',
     'message': 'Hey, Meeting at 8 pm today!',
     'time': '3:53 pm',
     'profilePic':
         'https://hindutrend.com/wp-content/uploads/2021/03/cute-girl-images-for-dp.jpg',
-  },
+  }, */
   {
     'name': 'Rivaan Ranawat',
     'message': 'Hey, how are you doing?',
@@ -18,14 +18,21 @@ const info = [
     'message': 'Hello, whats up',
     'time': '2:25 pm',
     'profilePic':
-        'https://www.socialketchup.in/wp-content/uploads/2020/05/fi-vill-JOHN-DOE.jpg',
+        'https://www.baby-chick.com/wp-content/uploads/2021/10/Happy-Laughing-Baby-Boy-Lying-on-Textured-Fabric-165945036_2122x1415.jpeg',
   },
+  /*  {
+    'name': 'Happy',
+    'message': 'Hello, How are you?',
+    'time': '1:25 pm',
+    'profilePic':
+        'https://www.baby-chick.com/wp-content/uploads/2021/10/Happy-Laughing-Baby-Boy-Lying-on-Textured-Fabric-165945036_2122x1415.jpeg',
+  }, */
   {
     'name': 'Naman Ranawat',
     'message': 'Hello, I want to sleep.',
     'time': '1:03 pm',
     'profilePic':
-        'https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/16:9/w_3999,h_2249,c_limit/MtFuji-GettyImages-959111140.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5wlfrny2iU2HeaiHm1Pv7A0rmPB03rYVcw&usqp=CAU',
   },
   {
     'name': 'Dad',
@@ -48,6 +55,13 @@ const info = [
     'profilePic':
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
   },
+  /* {
+    'name': 'Sara',
+    'message': 'See you!',
+    'time': '8:20 am',
+    'profilePic':
+        'https://blingvine.com/cdn/shop/t/88/assets/insta4_500x.png?v=72887334101985890541636459033',
+  }, */
   {
     'name': 'Albert Dera',
     'message': 'Am I fat?',
