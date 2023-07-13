@@ -12,8 +12,8 @@ class WebProfileBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.077,
-      width: MediaQuery.of(context).size.width * 0.25,
-      padding: const EdgeInsets.all(8),
+      width: MediaQuery.of(context).size.width * 0.30,
+      padding: const EdgeInsets.all(7),
       decoration: const BoxDecoration(
         border: Border(
           right: BorderSide(

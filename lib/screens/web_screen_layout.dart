@@ -18,7 +18,7 @@ class WebScreenLayout extends StatelessWidget {
               children: [
                 WebProfileBar(), //web profile bar,
                 WebSearchBar(), //web search bar,
-                ContactsList()
+                ContactsList(),
               ],
             ),
           ),
@@ -26,7 +26,7 @@ class WebScreenLayout extends StatelessWidget {
         //container --> for web,
         Container(
           //Media Query helps in responsive design
-          width: MediaQuery.of(context).size.width * 0.75,
+          width: MediaQuery.of(context).size.width * 0.70,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/backgroundImage.png'),

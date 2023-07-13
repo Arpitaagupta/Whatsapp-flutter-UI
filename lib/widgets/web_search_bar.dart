@@ -8,7 +8,7 @@ class WebSearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.09,
-      width: MediaQuery.of(context).size.width * 0.25,
+      width: MediaQuery.of(context).size.width * 0.30,
       padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
         border: Border(
@@ -17,26 +17,29 @@ class WebSearchBar extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-            //segment, notes_outline
-            filled: true,
-            fillColor: searchBarColor,
-            prefixIcon: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Icon(Icons.search),
+          //segment, notes_outline
+          filled: true,
+          fillColor: searchBarColor,
+          prefixIcon: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Icon(Icons.search),
+          ),
+          hintStyle: const TextStyle(
+            fontSize: 14,
+          ),
+          hintText: 'Search or start a new chat',
+
+          icon: const Icon(Icons.filter_list),
+
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: const BorderSide(
+              width: 0,
+              style: BorderStyle.none,
             ),
-            hintStyle: const TextStyle(
-              fontSize: 14,
-            ),
-            hintText: 'Search or start a new chat',
-            icon: const Icon(Icons.filter_list),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10),
-              borderSide: const BorderSide(
-                width: 0,
-                style: BorderStyle.none,
-              ),
-            ),
-            contentPadding: EdgeInsets.all(10)),
+          ),
+          contentPadding: const EdgeInsets.all(10),
+        ),
       ),
     );
   }
