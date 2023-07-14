@@ -15,31 +15,44 @@ class WebSearchBar extends StatelessWidget {
           bottom: BorderSide(color: dividerColor),
         ),
       ),
-      child: TextField(
-        decoration: InputDecoration(
-          //segment, notes_outline
-          filled: true,
-          fillColor: searchBarColor,
-          prefixIcon: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Icon(Icons.search),
-          ),
-          hintStyle: const TextStyle(
-            fontSize: 14,
-          ),
-          hintText: 'Search or start a new chat',
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              decoration: InputDecoration(
+                //segment, notes_outline
+                filled: true,
+                fillColor: searchBarColor,
+                prefixIcon: const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: Icon(Icons.search),
+                ),
+                hintStyle: const TextStyle(
+                  fontSize: 14,
+                ),
+                hintText: 'Search or start a new chat',
 
-          icon: const Icon(Icons.filter_list),
+                // icon: const Icon(Icons.filter_list),
 
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(
-              width: 0,
-              style: BorderStyle.none,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: const BorderSide(
+                    width: 0,
+                    style: BorderStyle.none,
+                  ),
+                ),
+                contentPadding: const EdgeInsets.all(10),
+              ),
             ),
           ),
-          contentPadding: const EdgeInsets.all(10),
-        ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.filter_list,
+              color: Colors.grey,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -13,13 +13,13 @@ class ChatList extends StatelessWidget {
       itemBuilder: (context, index) {
         if (messages[index]['isMe'] == true) {
           //MyMessage -->  card
-          MyMessageCard(
+          return MyMessageCard(
             message: messages[index]['text'].toString(),
             date: messages[index]['time'].toString(),
           );
         }
         //SenderMessage --> Card
-        SenderMessageCard(
+        return SenderMessageCard(
           message: messages[index]['text'].toString(),
           date: messages[index]['time'].toString(),
         );
