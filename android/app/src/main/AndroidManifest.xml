@@ -2,8 +2,8 @@
     package="com.example.whatsapp_flutter_ui">
    <application
         android:label="whatsapp_flutter_ui"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:name="WhatsApp Clone"
+        android:icon="@drawable/whatsapp_logo">
         <activity
             android:name=".MainActivity"
             android:exported="true"

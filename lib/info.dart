@@ -1,52 +1,66 @@
 const info = [
-  /*  {
-    'name': 'Aanya Goyal',
-    'message': 'Hey, Meeting at 8 pm today!',
-    'time': '3:53 pm',
-    'profilePic':
-        'https://hindutrend.com/wp-content/uploads/2021/03/cute-girl-images-for-dp.jpg',
-  }, */
   {
-    'name': 'Rivaan Ranawat',
-    'message': 'Hey, how are you doing?',
-    'time': '3:53 pm',
+    'name': 'Sandhya Sikhawat',
+    'message': 'TTYL',
+    'time': '8:53 pm',
     'profilePic':
-        'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6a_P2OPIpy5-fktyUjn4qoEjNbMPHckaIEUF-fE6_6QjQIi-8z3FNoCvjelQmGRJUIg&usqp=CAU',
   },
   {
-    'name': 'John Doe',
+    'name': 'Rishi ',
+    'message': 'ok Bye!',
+    'time': '4:40 pm',
+    'profilePic':
+        'https://www.bollywoodshaadis.com/img/article-2021718210290437744000.jpg',
+  },
+  {
+    'name': 'Trio❤️',
+    'message': 'Done! We will wear black at party tomorrow.',
+    'time': '3:53 pm',
+    'profilePic':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxxN7xyXZGxOywJ1KQBxsuBMMao30Vim2-A&usqp=CAU',
+  },
+  {
+    'name': 'Jivi',
     'message': 'Hello, whats up',
     'time': '2:25 pm',
     'profilePic':
         'https://www.baby-chick.com/wp-content/uploads/2021/10/Happy-Laughing-Baby-Boy-Lying-on-Textured-Fabric-165945036_2122x1415.jpeg',
   },
-  /*  {
-    'name': 'Happy',
-    'message': 'Hello, How are you?',
+  {
+    'name': 'Didi',
+    'message': 'Call me when you get free.',
     'time': '1:25 pm',
     'profilePic':
-        'https://www.baby-chick.com/wp-content/uploads/2021/10/Happy-Laughing-Baby-Boy-Lying-on-Textured-Fabric-165945036_2122x1415.jpeg',
-  }, */
-  {
-    'name': 'Naman Ranawat',
-    'message': 'Hello, I want to sleep.',
-    'time': '1:03 pm',
-    'profilePic':
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5wlfrny2iU2HeaiHm1Pv7A0rmPB03rYVcw&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwB7f8yHV1sODYuu0wf-1bUki1MEqzSRsU9FZiHdE9zJPm5aEnLdq5WdjCHNo-AjCI_8&usqp=CAU',
   },
   {
     'name': 'Dad',
     'message': 'Call me, have some work',
     'time': '12:06 pm',
     'profilePic':
-        'https://pbs.twimg.com/profile_images/1419974913260232732/Cy_CUavB.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8e5U3vRthIoVaTiWiYP4Yh8HO1yOstS3OrA&usqp=CAU',
+  },
+  {
+    'name': 'Pihu',
+    'message': 'Woahh..Great!',
+    'time': '12:03 pm',
+    'profilePic':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF_ImY_syqmLzNf7GRu-iOm4Jb6P4NAMrz_w&usqp=CAU',
   },
   {
     'name': 'Mom',
     'message': 'You ate food?',
     'time': '10:00 am',
     'profilePic':
-        'https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?auto=compress%2Cformat&ixlib=php-3.3.0',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQypUq8usENlO14ISMovYR1dLGlNWzlerzVPw&usqp=CAU',
+  },
+  {
+    'name': 'Naman Ranawat',
+    'message': 'Hello, I want to sleep.',
+    'time': '11:03 am',
+    'profilePic':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5wlfrny2iU2HeaiHm1Pv7A0rmPB03rYVcw&usqp=CAU',
   },
   {
     'name': 'Jurica',
@@ -54,6 +68,13 @@ const info = [
     'time': '9:53 am',
     'profilePic':
         'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
+  },
+  {
+    'name': 'Rivaan Ranawat',
+    'message': 'Hey, how are you doing?',
+    'time': '9:50 am',
+    'profilePic':
+        'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg',
   },
   /* {
     'name': 'Sara',
@@ -93,51 +114,57 @@ const info = [
 ];
 
 const messages = [
-  {"isMe": false, "text": "Hey What is up with you!!", "time": "10:00 am"},
-  {"isMe": true, "text": "im fine,wbu?", "time": "11:00 am"},
-  {"isMe": false, "text": "I am great man!", "time": "11:01 am"},
+  {"isMe": true, "text": "Hey What is up with you!!", "time": "8:00 pm"},
+  {"isMe": false, "text": "im fine,wbu?", "time": "8:30 pm"},
+  {"isMe": true, "text": "I am great!", "time": "8:41 pm"},
   {
-    "isMe": false,
+    "isMe": true,
     "text": "Just messaged cuz I had some work.",
-    "time": "11:01 am"
+    "time": "8:41 pm"
   },
-  {"isMe": true, "text": "Obviously, say", "time": "11:03 am"},
-  {
-    "isMe": false,
-    "text": "haha I wanted you to check out my new channel ^^",
-    "time": "11:04 am"
-  },
+  {"isMe": false, "text": "Obviously, say", "time": "8:43 pm"},
   {
     "isMe": true,
-    "text": " Sure, what is the channel name?",
-    "time": "11:05 am"
+    "text": "haha I wanted you to check out my new project - WhatsApp-UI ^^",
+    "time": "8:44 pm"
   },
   {
     "isMe": false,
-    "text": "Rivaan Ranawat",
-    "time": "11:06 am",
+    "text": " Sure, send me the github repo link..",
+    "time": "8:45 pm"
   },
   {
     "isMe": true,
+    "text": "https://github.com/Arpitaagupta/Whatsapp-flutter-UI.git",
+    "time": "8:46 pm",
+  },
+  {
+    "isMe": false,
     "text": "Looks great to me!",
-    "time": "11:15 am",
+    "time": "8:46 pm",
   },
-  {"isMe": false, "text": "Thanks bro!", "time": "11:17 am"},
-  {"isMe": false, "text": "Did you subscribe?", "time": "11:16 am"},
-  {"isMe": true, "text": "Yes, surely bro!", "time": "11:17 am"},
+  {"isMe": true, "text": "Thanks bro!", "time": "8:47 pm"},
+  {"isMe": true, "text": "Did you starred it?", "time": "8:46 pm"},
+  {"isMe": false, "text": "Yes, surely dude!", "time": "8:48 pm"},
+  {
+    "isMe": true,
+    "text":
+        "Cool, I've switched from Kotlin to Flutter, due to high demand of cross platform in industries.",
+    "time": "8:48 pm",
+  },
   {
     "isMe": false,
-    "text": "Cool, did you like the content?",
-    "time": "11:18 am",
+    "text": "I loved it, you are doing great!",
+    "time": "8:49 am",
   },
   {
     "isMe": true,
-    "text": "I loved it?",
-    "time": "11:19 am",
+    "text": "OMG! Woah! Thanks!",
+    "time": "8:50 pm",
   },
   {
     "isMe": false,
-    "text": "OMG! Woah! Thanks!",
-    "time": "11:20 am",
+    "text": "TTYL",
+    "time": "8:53 pm",
   },
 ];

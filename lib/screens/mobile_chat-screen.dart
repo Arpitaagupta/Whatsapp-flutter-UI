@@ -15,7 +15,7 @@ class MobileChatScreen extends StatelessWidget {
           children: [
             const CircleAvatar(
               backgroundImage: NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg'),
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6a_P2OPIpy5-fktyUjn4qoEjNbMPHckaIEUF-fE6_6QjQIi-8z3FNoCvjelQmGRJUIg&usqp=CAU'),
               radius: 18, // Replace with your avatar image path
             ),
             const SizedBox(width: 8), // Adjust the spacing as needed
@@ -96,52 +96,60 @@ class MobileChatScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          const Expanded(
-            child: ChatList(),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/backgroundImage.png'),
+            fit: BoxFit.cover,
           ),
-          Container(
-            color: mobileChatBoxColor,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Row(
-                children: const [
-                  Icon(
-                    Icons.emoji_emotions_outlined,
-                    color: Colors.grey,
-                  ),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Type a message',
-                        hintStyle: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey,
+        ),
+        child: Column(
+          children: [
+            const Expanded(
+              child: ChatList(),
+            ),
+            Container(
+              color: mobileChatBoxColor,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  children: const [
+                    Icon(
+                      Icons.emoji_emotions_outlined,
+                      color: Colors.grey,
+                    ),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Type a message',
+                          hintStyle: TextStyle(
+                            fontSize: 14,
+                            color: Colors.grey,
+                          ),
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.all(0),
                         ),
-                        border: InputBorder.none,
-                        contentPadding: EdgeInsets.all(0),
                       ),
                     ),
-                  ),
-                  Icon(
-                    Icons.attach_file,
-                    color: Colors.grey,
-                  ),
-                  Icon(
-                    Icons.currency_rupee,
-                    color: Colors.grey,
-                  ),
-                  Icon(
-                    Icons.camera_alt,
-                    color: Colors.grey,
-                  ),
-                ],
+                    Icon(
+                      Icons.attach_file,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      Icons.currency_rupee,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
