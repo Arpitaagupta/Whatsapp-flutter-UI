@@ -30,12 +30,59 @@ class MobileChatScreen extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          IconButton(
+          /* IconButton(
             onPressed: () {},
             icon: const Icon(
               Icons.more_vert,
               color: Colors.white,
             ),
+          ), */
+          PopupMenuButton(
+            color: appBarColor,
+            shadowColor: Colors.black,
+            icon: const Icon(
+              Icons.more_vert,
+              color: Colors.white,
+            ),
+            itemBuilder: (context) => [
+              const PopupMenuItem(
+                value: 1,
+                child: Text("View Contact"),
+              ),
+              const PopupMenuItem(
+                value: 2,
+                child: Text("Media, Links and Docs"),
+              ),
+              const PopupMenuItem(
+                value: 3,
+                child: Text("Search"),
+              ),
+              const PopupMenuItem(
+                value: 4,
+                child: Text("Mute Notification"),
+              ),
+              const PopupMenuItem(
+                value: 5,
+                child: Text("Disappering Messages "),
+              ),
+              const PopupMenuItem(
+                value: 6,
+                child: Text("Wallpaper"),
+              ),
+              PopupMenuItem(
+                value: 7,
+                child: Row(
+                  children: const [
+                    Text('More'),
+                    Padding(
+                      padding: EdgeInsets.only(
+                          left: 180), // Adjust the padding as needed
+                      child: Icon(Icons.arrow_right),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),

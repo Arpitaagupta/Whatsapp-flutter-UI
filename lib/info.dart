@@ -1,5 +1,5 @@
 const info = [
-/*   {
+  /*  {
     'name': 'Aanya Goyal',
     'message': 'Hey, Meeting at 8 pm today!',
     'time': '3:53 pm',
