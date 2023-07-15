@@ -11,8 +11,18 @@ class MobileChatScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appBarColor,
-        title: Text(
-          info[0]['name'].toString(),
+        title: Row(
+          children: [
+            const CircleAvatar(
+              backgroundImage: NetworkImage(
+                  'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg'),
+              radius: 18, // Replace with your avatar image path
+            ),
+            const SizedBox(width: 8), // Adjust the spacing as needed
+            Text(
+              '${info[0]['name'].toString().substring(0, 11)}${info[0]['name'].toString().length > 11 ? '...' : ''}',
+            ),
+          ],
         ),
         centerTitle: false,
         actions: [
