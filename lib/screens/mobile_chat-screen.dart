@@ -16,9 +16,9 @@ class MobileChatScreen extends StatelessWidget {
             const CircleAvatar(
               backgroundImage: NetworkImage(
                   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6a_P2OPIpy5-fktyUjn4qoEjNbMPHckaIEUF-fE6_6QjQIi-8z3FNoCvjelQmGRJUIg&usqp=CAU'),
-              radius: 18, // Replace with your avatar image path
+              radius: 18,
             ),
-            const SizedBox(width: 8), // Adjust the spacing as needed
+            const SizedBox(width: 8),
             Text(
               '${info[0]['name'].toString().substring(0, 11)}${info[0]['name'].toString().length > 11 ? '...' : ''}',
             ),
@@ -40,13 +40,6 @@ class MobileChatScreen extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          /* IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.more_vert,
-              color: Colors.white,
-            ),
-          ), */
           PopupMenuButton(
             color: appBarColor,
             shadowColor: Colors.black,
@@ -85,8 +78,7 @@ class MobileChatScreen extends StatelessWidget {
                   children: const [
                     Text('More'),
                     Padding(
-                      padding: EdgeInsets.only(
-                          left: 180), // Adjust the padding as needed
+                      padding: EdgeInsets.only(left: 180),
                       child: Icon(Icons.arrow_right),
                     ),
                   ],
@@ -108,49 +100,79 @@ class MobileChatScreen extends StatelessWidget {
             const Expanded(
               child: ChatList(),
             ),
-            Container(
-              color: mobileChatBoxColor,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Row(
-                  children: const [
-                    Icon(
-                      Icons.emoji_emotions_outlined,
-                      color: Colors.grey,
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                        top: 10, bottom: 10, left: 10, right: 2),
+                    decoration: BoxDecoration(
+                      color: mobileChatBoxColor,
+                      borderRadius: BorderRadius.circular(25),
                     ),
-                    SizedBox(width: 10),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Type a message',
-                          hintStyle: TextStyle(
-                            fontSize: 14,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.emoji_emotions_outlined,
                             color: Colors.grey,
                           ),
-                          border: InputBorder.none,
-                          contentPadding: EdgeInsets.all(0),
-                        ),
+                          SizedBox(width: 10),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: 'Message',
+                                hintStyle: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.grey,
+                                ),
+                                border: InputBorder.none,
+                                contentPadding: EdgeInsets.all(0),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: Icon(
+                              Icons.attach_file,
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(right: 10),
+                            child: CircleAvatar(
+                              backgroundColor: Colors.grey,
+                              radius: 10,
+                              child: Icon(
+                                Icons.currency_rupee,
+                                color: mobileChatBoxColor,
+                                size: 15,
+                              ),
+                            ),
+                          ),
+                          Icon(
+                            Icons.camera_alt,
+                            color: Colors.grey,
+                          ),
+                        ],
                       ),
                     ),
-                    Icon(
-                      Icons.attach_file,
-                      color: Colors.grey,
-                    ),
-                    Icon(
-                      Icons.currency_rupee,
-                      color: Colors.grey,
-                    ),
-                    Icon(
-                      Icons.camera_alt,
-                      color: Colors.grey,
-                    ),
-                    Icon(
-                      Icons.mic,
-                      color: Colors.grey,
-                    )
-                  ],
+                  ),
                 ),
-              ),
+                const SizedBox(width: 10),
+                const Padding(
+                  padding: EdgeInsets.only(right: 10),
+                  child: CircleAvatar(
+                    backgroundColor: tabColor,
+                    radius: 25,
+                    child: Icon(
+                      Icons.mic,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
