@@ -40,12 +40,51 @@ class WebChatAppBar extends StatelessWidget {
                   color: Colors.grey,
                 ),
               ),
-              IconButton(
-                onPressed: () {},
+              PopupMenuButton(
+                color: webAppBarColor,
+                shadowColor: Colors.black,
                 icon: const Icon(
                   Icons.more_vert,
                   color: Colors.grey,
                 ),
+                itemBuilder: (context) => [
+                  const PopupMenuItem(
+                    value: 1,
+                    child: Text("Contact info"),
+                  ),
+                  const PopupMenuItem(
+                    value: 2,
+                    child: Text("Select Messages"),
+                  ),
+                  const PopupMenuItem(
+                    value: 3,
+                    child: Text("Close chat"),
+                  ),
+                  const PopupMenuItem(
+                    value: 4,
+                    child: Text("Mute Notification"),
+                  ),
+                  const PopupMenuItem(
+                    value: 5,
+                    child: Text("Disappering Messages "),
+                  ),
+                  const PopupMenuItem(
+                    value: 6,
+                    child: Text("Clear Messages"),
+                  ),
+                  const PopupMenuItem(
+                    value: 7,
+                    child: Text("Delete chat"),
+                  ),
+                  const PopupMenuItem(
+                    value: 8,
+                    child: Text("Report"),
+                  ),
+                  const PopupMenuItem(
+                    value: 9,
+                    child: Text("Block"),
+                  ),
+                ],
               ),
             ],
           )

@@ -5,7 +5,8 @@ import 'package:whatsapp_flutter_ui/widgets/contacts_list.dart';
 import '../widgets/web_profile_bar.dart';
 import '../widgets/web_search_bar.dart';
 import '../widgets/web_chat_appbar.dart';
-import '../widgets/chat_list.dart';
+
+import 'dart:math';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({super.key});
@@ -65,9 +66,10 @@ class WebScreenLayout extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
+                    Transform.rotate(
+                      angle: 315.0 *
+                          (pi / 180), // Specify the rotation angle in radians
+                      child: const Icon(
                         Icons.attach_file,
                         color: Colors.grey,
                       ),

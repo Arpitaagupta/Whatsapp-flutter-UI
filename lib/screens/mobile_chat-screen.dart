@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_flutter_ui/colors.dart';
 import 'package:whatsapp_flutter_ui/info.dart';
 import 'package:whatsapp_flutter_ui/widgets/chat_list.dart';
+import 'dart:math';
 
 class MobileChatScreen extends StatelessWidget {
   const MobileChatScreen({Key? key}) : super(key: key);
@@ -113,13 +114,13 @@ class MobileChatScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
-                        children: const [
-                          Icon(
+                        children: [
+                          const Icon(
                             Icons.emoji_emotions_outlined,
                             color: Colors.grey,
                           ),
-                          SizedBox(width: 10),
-                          Expanded(
+                          const SizedBox(width: 10),
+                          const Expanded(
                             child: TextField(
                               decoration: InputDecoration(
                                 hintText: 'Message',
@@ -134,9 +135,14 @@ class MobileChatScreen extends StatelessWidget {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 8),
-                            child: Icon(
-                              Icons.attach_file,
-                              color: Colors.grey,
+                            child: Transform.rotate(
+                              angle: 315.0 *
+                                  (pi /
+                                      180), // Specify the rotation angle in radians
+                              child: const Icon(
+                                Icons.attach_file,
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                           Padding(
