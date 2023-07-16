@@ -36,8 +36,11 @@ class MobileScreenLayout extends StatelessWidget {
                   color: Colors.grey,
                 )),
             PopupMenuButton(
-              color: backgroundColor,
-              icon: const Icon(Icons.more_vert),
+              color: appBarColor,
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ),
               itemBuilder: (context) => [
                 const PopupMenuItem(
                   value: 1,

@@ -144,6 +144,10 @@ class MobileChatScreen extends StatelessWidget {
                       Icons.camera_alt,
                       color: Colors.grey,
                     ),
+                    Icon(
+                      Icons.mic,
+                      color: Colors.grey,
+                    )
                   ],
                 ),
               ),
