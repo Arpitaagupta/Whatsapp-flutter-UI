@@ -35,12 +35,36 @@ class MobileScreenLayout extends StatelessWidget {
                   Icons.search,
                   color: Colors.grey,
                 )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.more_vert,
-                  color: Colors.grey,
-                )),
+            PopupMenuButton(
+              color: backgroundColor,
+              icon: const Icon(Icons.more_vert),
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 1,
+                  child: Text("New Group"),
+                ),
+                const PopupMenuItem(
+                  value: 2,
+                  child: Text("New Broadcast"),
+                ),
+                const PopupMenuItem(
+                  value: 3,
+                  child: Text("Linked Devices"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Starred Messages"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Payments"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Settings"),
+                ),
+              ],
+            ),
           ],
           bottom: const TabBar(
               indicatorColor: tabColor,
