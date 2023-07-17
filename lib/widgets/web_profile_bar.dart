@@ -54,12 +54,40 @@ class WebProfileBar extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.more_vert,
-                  color: Colors.grey,
-                ))
+            PopupMenuButton(
+              color: webAppBarColor,
+              shadowColor: Colors.black,
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              itemBuilder: (context) => [
+                const PopupMenuItem(
+                  value: 1,
+                  child: Text("New group"),
+                ),
+                const PopupMenuItem(
+                  value: 2,
+                  child: Text("New community"),
+                ),
+                const PopupMenuItem(
+                  value: 3,
+                  child: Text("Starred Messages"),
+                ),
+                const PopupMenuItem(
+                  value: 4,
+                  child: Text("Select chats"),
+                ),
+                const PopupMenuItem(
+                  value: 5,
+                  child: Text("Settings"),
+                ),
+                const PopupMenuItem(
+                  value: 6,
+                  child: Text("Logout"),
+                ),
+              ],
+            ),
           ],
         ),
       ]),
