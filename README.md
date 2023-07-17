@@ -33,7 +33,9 @@ A WhatsApp user interface clone built with Flutter. This project aims to replica
 
 ## 📸 Screenshots
 
-<img src="Screenshots/Screenshot-1.png" width="200" alt="Screenshot-1"> <img src="Screenshots/Screenshot-2.png" width="250" alt="Screenshot-2">
+<img src="Screenshots/Screenshot-1.png" width="200" alt="Screenshot-1"> <img src="Screenshots/Screenshot-2.png" width="200" alt="Screenshot-2"><img src="Screenshots/Screenshot-3.png" width="200" alt="Screenshot-2"> <img src="Screenshots/Screenshot-4.png" width="200" alt="Screenshot-2">
+
+
 
 ## 👉 Prerequisites
 
@@ -66,4 +68,12 @@ flutter run
 
 ## 🤝 Contributing
 
-Found a bug? Want to add a cool new feature? We welcome contributions from all developers! Your contributions can help improve the WhatsApp Flutter UI project and make it even better. 
+Found a bug? 🐛
+Want to add a cool new feature? 🤔
+
+Your contributions can help improve the WhatsApp Flutter UI project and make it even better.✨
+
+<hr>
+<p align="center">
+Contributions  are welcomed from all developers!❤️
+</p>
