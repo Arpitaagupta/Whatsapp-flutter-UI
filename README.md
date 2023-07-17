@@ -33,10 +33,10 @@ A WhatsApp user interface clone built with Flutter. This project aims to replica
 
 ## 📸 Screenshots
 
-### * Screenshots from Mobile Phone :
+* ### Screenshots from Mobile Phone :
 <img src="Screenshots/Screenshot-1.png" width="180" alt="Screenshot-1">   <img src="Screenshots/Screenshot-2.png" width="180" alt="Screenshot-2">   <img src="Screenshots/Screenshot-3.png" width="180" alt="Screenshot-3">   <img src="Screenshots/Screenshot-4.png" width="180" alt="Screenshot-4">
 
-### * Screenshots from Web :
+* ### Screenshots from Web :
 <img src="Screenshots/Screenshot-5.png" width="500" alt="Screenshot-5">  <img src="Screenshots/Screenshot-6.png" width="500" alt="Screenshot-6">
 
 <img src="Screenshots/Screenshot-7.png" width="500" alt="Screenshot-7">
