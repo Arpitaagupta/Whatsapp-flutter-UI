@@ -15,7 +15,7 @@
     </h3>
   </p>
 
-[![License](https://github.com/Arpitaagupta/Whatsapp-flutter-UI/blob/main/CODE_OF_CONDUCT.md)](https://opensource.org/licenses/MIT)   <a href="CODE_OF_CONDUCT.md" alt="Contributions welcome">
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)   <a href="CODE_OF_CONDUCT.md" alt="Contributions welcome">
     <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?logo=github" /></a>
     
 </div>
