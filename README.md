@@ -33,7 +33,7 @@ A WhatsApp user interface clone built with Flutter. This project aims to replica
 
 ## 📸 Screenshots
 
-<img src="Screenshots/Screenshot-1.png" width="250" alt="Screenshot-1"> <img src="Screenshots/Screenshot-2.png" width="250" alt="Screenshot-2">
+<img src="Screenshots/Screenshot-1.png" width="200" alt="Screenshot-1"> <img src="Screenshots/Screenshot-2.png" width="250" alt="Screenshot-2">
 
 ## 👉 Prerequisites
 
@@ -45,7 +45,9 @@ Before running this project, make sure you have the following prerequisites set 
 ## ⚒️ Installation and Usage
 
 1. Clone the repository:
-``` git clone https://github.com/Arpitaagupta/Whatsapp-flutter-UI.git ```
+``` 
+git clone https://github.com/Arpitaagupta/Whatsapp-flutter-UI.git 
+```
 
 2. Navigate to the project directory:
 ``` 
@@ -53,11 +55,13 @@ cd whatsapp_flutter_ui
 ```
 
 3. Install the dependencies:
-```flutter pub get
+```
+flutter pub get
 ```
 
 4. Run the app:
-```flutter run
+```
+flutter run
 ```
 
 ## 🤝 Contributing
